@@ -1,6 +1,7 @@
 # PCA9539 16-Bit I/O Expander
 
-PCA9539 GPIO expander library for Particle devices. It makes working with PCA9539 16-Bit I/O expander pins easier, with familiar functions like `pinMode()` and `digitalWrite()`. Refer to the [datasheet](http://www.ti.com/lit/ds/symlink/pca9539.pdf?ts=1590878066270) for more information about the chip.
+PCA9539 GPIO expander library for Particle devices.
+Refer to the [datasheet](http://www.ti.com/lit/ds/symlink/pca9539.pdf?ts=1590878066270) for more information about the chip.
 
 ## Documentation
 
