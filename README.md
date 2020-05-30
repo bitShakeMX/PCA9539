@@ -19,6 +19,33 @@ void setup() {
 }
 ```
 
+### `Pin mapping`
+
+![Hardware connection](images/pinMapping.jpg "Pinout")
+
+#### Parameters:
+| #Pin | Port pin | Port name |
+|------|----------|-----------|
+| `0` | `4` | `P00` |
+| `1` | `4` | `P01` |
+| `2` | `4` | `P02` |
+| `3` | `4` | `P03` |
+| `4` | `4` | `P04` |
+| `5` | `4` | `P05` |
+| `6` | `4` | `P06` |
+| `7` | `4` | `P07` |
+| `8` | `4` | `P10` |
+| `9` | `4` | `P11` |
+| `10` | `4` | `P12` |
+| `11` | `4` | `P13` |
+| `12` | `4` | `P14` |
+| `13` | `4` | `P15` |
+| `14` | `4` | `P16` |
+| `15` | `4` | `P17` |
+
+
+
+
 ### `begin([i2caddr])`
 Initializes the device and performs initial I2C setup. This method should be called before any others are used.
 
@@ -95,4 +122,3 @@ void loop() {
 Copyright 2020 Alfonso Martinez Alcantara
 
 Licensed under the MIT license
-
