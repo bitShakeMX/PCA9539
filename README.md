@@ -24,7 +24,6 @@ void setup() {
 
 ![Hardware connection](images/pinMapping.jpg "Pinout")
 
-#### Pin mapping:
 | #Pin | Port pin | Port name |
 |------|----------|-----------|
 | `0` | `4` | `P00` |
