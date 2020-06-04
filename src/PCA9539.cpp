@@ -16,15 +16,11 @@ void PCA9539::pinMode(uint8_t pin, uint8_t mode) {
   if(pin => 0 && pin <8){
     PCA9539_CONF_REGISTER = PCA9539_CONF0_REGISTER;
     PCA9539_INV_REGISTER = PCA9539_INV0_REGISTER;
-    _invport = 0;
-    _port = 0;
   }
 
   if(pin => 8 && pin <16){
     PCA9539_CONF_REGISTER = PCA9539_CONF1_REGISTER;
     PCA9539_INV_REGISTER = PCA9539_INV1_REGISTER;
-    _invport = 1;
-    _port = 1;
   }
 
   switch (mode) {
@@ -66,12 +62,10 @@ void PCA9539::digitalWrite(uint8_t pin, uint8_t value) {
 
   if(pin => 0 && pin <8){
     PCA9539_OP_REGISTER = PCA9539_OP0_REGISTER;
-    _port = 0;
   }
 
   if(pin => 8 && pin <16){
     PCA9539_OP_REGISTER = PCA9539_OP1_REGISTER;
-    _port = 1;
   }
 
 
@@ -98,10 +92,8 @@ uint8_t PCA9539::digitalRead(uint8_t pin) {
 
   if(pin > 0 && pin <8){
     PCA9539_IP_REGISTER = PCA9539_IP0_REGISTER;
-    _port = 0;
   }else{
     PCA9539_IP_REGISTER = PCA9539_IP1_REGISTER;
-    _port = 1;
   }
 
   // We need to write to the input register first to get the status of the pins.
